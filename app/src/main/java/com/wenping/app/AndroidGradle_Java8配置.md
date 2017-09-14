@@ -1,7 +1,6 @@
  ### 应用中gradle Java8 lamb 配置
- '''
- 
-    android{
+ ``` groovy
+     android{
         defaultConfig{
             jackOptions {
                 enabled true
@@ -13,8 +12,7 @@
             targetCompatibility JavaVersion.VERSION_1_8
         }
     }
- 
- '''
+ ```
 
 
 

@@ -1,7 +1,6 @@
 com.android.support:design 支持库
 描述：  
-'''
-
+```
     res/value/style.xml  动画样式
     <style name="AnimBottom" parent="@android:style/Animation">
         <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
@@ -33,8 +32,6 @@ com.android.support:design 支持库
             android:toAlpha="0.0" />
     </set>
     
-
-
-'''
+```
 
 
