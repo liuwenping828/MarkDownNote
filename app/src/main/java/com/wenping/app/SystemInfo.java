@@ -3,11 +3,24 @@ package com.wenping.app;
 import android.app.ActivityManager;
 import android.os.IBinder;
 
+import java.io.File;
+
 /**
  * Created by Administrator on 2017/8/23.
  */
 
 public class SystemInfo {
+
+    // 检查设备是否Root
+    public static boolean checkRooted() {
+        boolean result = false;
+        try {
+            result = new File("/system/bin/su").exists() || new File("/system/xbin/su").exists();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return result;
+    }
 
 
     public static long GetAvailableMemory(ActivityManager manager) {
